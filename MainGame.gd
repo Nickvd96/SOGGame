@@ -6,7 +6,7 @@ func _ready():
 
 
 func _on_Antwoord_A_pressed():
-	get_tree().change_scene("res://Onderwerp1.1.tscn")
+	get_tree().change_scene("res://Onderwerp1A.tscn")
 
 
 func _on_Antwoord_B_pressed():
