@@ -1,13 +1,10 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
+	#inladen van hoeveelheid juiste/onjuiste antwoorden kan worden gerbuikt voor testen 
+	#voor gerbuik zet label op visbale
 	$Control/TestJuist.text = str(GlobalScripts.Juist)
 	$Control/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	pass
@@ -15,7 +12,10 @@ func _ready():
 
 
 
-
+#button functie wanneer er word geklikt 
+# telt aantal juit of onjuist op
+#word door verbonden naar volgende vraag
+# veranderd verhaal Var als antwoord niet juist is naar 1
 func _on_AntwoordA_pressed():
 	GlobalScripts.Juist += 1
 	$Control/TestJuist.text = str(GlobalScripts.Juist)

@@ -4,7 +4,7 @@ extends Node2D
 func _ready():
 	pass
 
-
+#elke button word naar een ander onderwerp gelinked 
 func _on_Antwoord_A_pressed():
 	get_tree().change_scene("res://Onderwerp1A.tscn")
 
