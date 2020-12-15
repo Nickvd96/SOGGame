@@ -36,5 +36,6 @@ func _on_AntwoordC_pressed():
 
 func _on_AntwoordD_pressed():
 	GlobalScripts.Onjuist += 1
-	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	GlobalScripts.VerhaalC1 += 1
+	$Control/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://ResultaatScreen.tscn")

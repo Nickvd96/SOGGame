@@ -14,12 +14,14 @@ func _ready():
 
 func _on_Antwoord_A_pressed():
 	GlobalScripts.Onjuist += 1
+	GlobalScripts.VerhaalA1 += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp1B.tscn")
 
 
 func _on_Antwoord_B_pressed():
 	GlobalScripts.Onjuist += 1
+	GlobalScripts.VerhaalA1 += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp1B.tscn")
 
@@ -31,5 +33,6 @@ func _on_Antwoord_C_pressed():
 
 func _on_Antwoord_D_pressed():
 	GlobalScripts.Onjuist += 1
+	GlobalScripts.VerhaalA1 += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp1B.tscn")
