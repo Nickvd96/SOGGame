@@ -1,0 +1,5 @@
+.import/
+*.import
+android/*
+!android/godot-camera-plugin.funabab/
+!android/.gdignore
