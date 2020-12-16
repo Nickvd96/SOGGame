@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Font/Montserrat-Medium.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/BackgroundGamev1.png" type="Texture" id=2]
 [ext_resource path="res://Images/Button.png" type="Texture" id=3]
+[ext_resource path="res://Images/UnfocusedButton.png" type="Texture" id=4]
 [ext_resource path="res://MainGame.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
@@ -109,7 +110,7 @@ margin_left = 43.0
 margin_top = -196.0
 margin_right = 410.0
 margin_bottom = -60.0
-texture_normal = ExtResource( 3 )
+texture_normal = ExtResource( 4 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -131,7 +132,7 @@ margin_left = 45.9955
 margin_top = -50.3394
 margin_right = 414.995
 margin_bottom = 74.6606
-texture_normal = ExtResource( 3 )
+texture_normal = ExtResource( 4 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -153,7 +154,7 @@ margin_left = 53.3303
 margin_top = 88.9955
 margin_right = 410.33
 margin_bottom = 212.995
-texture_normal = ExtResource( 3 )
+texture_normal = ExtResource( 4 )
 expand = true
 __meta__ = {
 "_edit_use_anchors_": false

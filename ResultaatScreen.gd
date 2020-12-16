@@ -17,7 +17,8 @@ func _ready():
 	#weergeven van Helaas als er meer foute antwoorden zijn dan goede
 	#weergeven van gefeliciteerd als het aantal juiste antwoorden hoger is dan onjuist
 	if GlobalScripts.Juist < GlobalScripts.Onjuist:
-		$Control/ResultaatTekst.text = ("Helaas")
+		$Control/ResultaatTekst.text = ("Helaas je staat online")
+		$Control/Fakepicture.show()
 		
 	if GlobalScripts.Onjuist < GlobalScripts.Juist:
 		$Control/ResultaatTekst.text = ("Gefeliciteerd")
