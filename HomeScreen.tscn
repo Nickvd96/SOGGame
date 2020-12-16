@@ -30,6 +30,7 @@ __meta__ = {
 }
 
 [node name="PlayButtonLabal" type="Label" parent="UI/PlayQuiz"]
+anchor_right = 6.10351e-07
 margin_left = 66.2802
 margin_top = 4.42554
 margin_right = 283.28
