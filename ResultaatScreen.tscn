@@ -18,7 +18,7 @@ font_data = ExtResource( 1 )
 size = 30
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=4]
 size = 20
 font_data = ExtResource( 1 )
 
@@ -117,7 +117,7 @@ margin_left = 87.5521
 margin_top = 24.6942
 margin_right = 174.552
 margin_bottom = 50.6942
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 4 )
 text = "verhaal 1"
 
 [node name="Controlverhaal2" type="Control" parent="."]
@@ -145,7 +145,7 @@ margin_left = 38.1637
 margin_top = 14.592
 margin_right = 129.164
 margin_bottom = 40.592
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 4 )
 text = "verhaal 2"
 
 [node name="Controlverhaal3" type="Control" parent="."]
@@ -173,7 +173,7 @@ margin_left = 31.4289
 margin_top = 14.592
 margin_right = 122.429
 margin_bottom = 40.592
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 4 )
 text = "verhaal 3"
 
 [node name="Terug naar startscherm" type="TextureButton" parent="."]

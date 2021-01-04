@@ -10,7 +10,7 @@ func _on_Antwoord_A_pressed():
 
 
 func _on_Antwoord_B_pressed():
-	get_tree().change_scene("res://Onderwerp2.tscn")
+	get_tree().change_scene("res://Onderwerp2A.tscn")
 
 
 func _on_Antwoord_C_pressed():
