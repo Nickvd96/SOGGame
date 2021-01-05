@@ -1,0 +1,134 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Font/Montserrat-Medium.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Onderwerp1A.gd" type="Script" id=2]
+[ext_resource path="res://Images/BackgroundGamev1.png" type="Texture" id=3]
+[ext_resource path="res://Images/Button.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 21
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+font_data = ExtResource( 1 )
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Control2" type="Control" parent="."]
+margin_right = 474.0
+margin_bottom = 144.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vraag" type="Label" parent="Control2"]
+margin_left = 49.0
+margin_top = 25.0
+margin_right = 430.0
+margin_bottom = 124.0
+custom_fonts/font = SubResource( 1 )
+text = "Je bent van plan een naakt foto
+te sturen naar je vriend/vriendin
+        Wat voor foto stuur je"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestOnjuist" type="Label" parent="Control2"]
+visible = false
+margin_left = 284.817
+margin_top = 718.318
+margin_right = 417.817
+margin_bottom = 788.318
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "OJA"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestJuist" type="Label" parent="Control2"]
+visible = false
+margin_left = 59.1815
+margin_top = 715.636
+margin_right = 137.182
+margin_bottom = 785.636
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "JA"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI" type="CanvasLayer" parent="."]
+layer = -2
+
+[node name="Background" type="Sprite" parent="UI"]
+position = Vector2( 242.098, 401.637 )
+texture = ExtResource( 3 )
+
+[node name="Title" type="Sprite" parent="UI"]
+position = Vector2( 227.078, 55.8692 )
+scale = Vector2( 0.236031, 0.22678 )
+texture = ExtResource( 4 )
+offset = Vector2( 50.762, 35.6857 )
+
+[node name="Control" type="Control" parent="UI"]
+margin_left = 2.0
+margin_top = 500.0
+margin_right = 476.0
+margin_bottom = 749.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Antwoord A" type="TextureButton" parent="UI/Control"]
+margin_left = 45.6742
+margin_top = -340.335
+margin_right = 414.674
+margin_bottom = -210.335
+texture_normal = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A" type="Label" parent="UI/Control/Antwoord A"]
+margin_left = 57.1279
+margin_top = 26.5087
+margin_right = 251.128
+margin_bottom = 88.5087
+custom_fonts/font = SubResource( 2 )
+text = "A: Een foto met je 
+gezicht"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Antwoord B" type="TextureButton" parent="UI/Control"]
+margin_left = 43.0
+margin_top = -196.0
+margin_right = 410.0
+margin_bottom = -60.0
+texture_normal = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="Label" parent="UI/Control/Antwoord B"]
+margin_left = 62.4704
+margin_top = 28.458
+margin_right = 327.47
+margin_bottom = 90.458
+custom_fonts/font = SubResource( 2 )
+text = "B: een foto waarin 
+ik niet herkenbaar
+           ben"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="UI/Control/Antwoord A" to="." method="_on_Antwoord_A_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord B" to="." method="_on_Antwoord_B_pressed"]

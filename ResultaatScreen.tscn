@@ -1,0 +1,200 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Font/Montserrat-Medium.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Images/BackgroundGamev1.png" type="Texture" id=2]
+[ext_resource path="res://ResultaatScreen.gd" type="Script" id=3]
+[ext_resource path="res://Images/Button.png" type="Texture" id=4]
+[ext_resource path="res://Images/TestPicture.jpg" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 90
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 26
+font_data = ExtResource( 1 )
+
+[node name="ResultaatScreen" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="Sprite" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 241.811, 404.578 )
+texture = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 481.0
+margin_bottom = 173.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Onjuist" type="Label" parent="Control"]
+margin_left = 279.58
+margin_top = 398.96
+margin_right = 437.58
+margin_bottom = 463.96
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.992157, 0, 0, 1 )
+text = "Onjuist"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Juist" type="Label" parent="Control"]
+margin_left = 56.4781
+margin_top = 397.457
+margin_right = 164.478
+margin_bottom = 461.457
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0156863, 1, 0.00784314, 1 )
+text = "Juist"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResultaatTitel" type="Label" parent="Control"]
+margin_left = 18.4996
+margin_top = 8.40897
+margin_right = 451.5
+margin_bottom = 119.409
+custom_fonts/font = SubResource( 2 )
+text = "Resultaat"
+
+[node name="ResultaatTekst" type="Label" parent="Control"]
+margin_left = 67.6529
+margin_top = 320.27
+margin_right = 238.653
+margin_bottom = 382.27
+custom_fonts/font = SubResource( 3 )
+text = "Helaas"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fakepicture" type="Sprite" parent="Control"]
+visible = false
+position = Vector2( 225.864, 217.892 )
+scale = Vector2( 0.0966369, 0.0966369 )
+texture = ExtResource( 5 )
+
+[node name="Controlverhaal1" type="Control" parent="."]
+margin_left = 141.27
+margin_top = 146.316
+margin_right = 181.27
+margin_bottom = 186.316
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="verhaal1" type="TextureButton" parent="Controlverhaal1"]
+margin_left = -33.3699
+margin_top = 361.562
+margin_right = 241.63
+margin_bottom = 446.562
+texture_normal = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Controlverhaal1/verhaal1"]
+margin_left = 87.5521
+margin_top = 24.6942
+margin_right = 174.552
+margin_bottom = 50.6942
+custom_fonts/font = SubResource( 6 )
+text = "verhaal 1"
+
+[node name="Controlverhaal2" type="Control" parent="."]
+margin_left = 138.273
+margin_top = 140.323
+margin_right = 178.273
+margin_bottom = 180.323
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="verhaal2" type="TextureButton" parent="Controlverhaal2"]
+margin_left = -71.5085
+margin_top = 467.502
+margin_right = 120.492
+margin_bottom = 527.502
+texture_normal = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Controlverhaal2/verhaal2"]
+margin_left = 38.1637
+margin_top = 14.592
+margin_right = 129.164
+margin_bottom = 40.592
+custom_fonts/font = SubResource( 6 )
+text = "verhaal 2"
+
+[node name="Controlverhaal3" type="Control" parent="."]
+margin_left = 104.904
+margin_top = 536.346
+margin_right = 144.904
+margin_bottom = 576.346
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="verhaal3" type="TextureButton" parent="Controlverhaal3"]
+margin_left = 176.387
+margin_top = 74.5051
+margin_right = 354.387
+margin_bottom = 129.505
+texture_normal = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Controlverhaal3/verhaal3"]
+margin_left = 31.4289
+margin_top = 14.592
+margin_right = 122.429
+margin_bottom = 40.592
+custom_fonts/font = SubResource( 6 )
+text = "verhaal 3"
+
+[node name="Terug naar startscherm" type="TextureButton" parent="."]
+margin_left = 62.9357
+margin_top = 687.481
+margin_right = 413.936
+margin_bottom = 796.481
+texture_normal = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Terug naar startscherm"]
+margin_left = 56.9357
+margin_top = 40.4543
+margin_right = 288.936
+margin_bottom = 73.4543
+custom_fonts/font = SubResource( 5 )
+text = "Terug naar menu"
+[connection signal="pressed" from="Controlverhaal1/verhaal1" to="." method="_on_verhaal1_pressed"]
+[connection signal="pressed" from="Controlverhaal2/verhaal2" to="." method="_on_verhaal2_pressed"]
+[connection signal="pressed" from="Controlverhaal3/verhaal3" to="." method="_on_verhaal3_pressed"]
+[connection signal="pressed" from="Terug naar startscherm" to="." method="_on_Terug_naar_startscherm_pressed"]

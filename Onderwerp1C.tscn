@@ -1,0 +1,177 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Onderwerp1C.gd" type="Script" id=1]
+[ext_resource path="res://Font/Montserrat-Medium.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Images/Button.png" type="Texture" id=3]
+[ext_resource path="res://Images/BackgroundGamev1.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 26
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 22
+font_data = ExtResource( 2 )
+
+[node name="Maingame" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vraag" type="Label" parent="Control"]
+margin_left = 55.3997
+margin_top = 44.9502
+margin_right = 832.4
+margin_bottom = 82.9507
+custom_fonts/font = SubResource( 1 )
+text = "Waar kun je terecht  als 
+je vragen hebt over sexting"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestOnjuist" type="Label" parent="Control"]
+visible = false
+margin_left = 327.435
+margin_top = 719.357
+margin_right = 436.435
+margin_bottom = 757.357
+custom_fonts/font = SubResource( 2 )
+text = "Onjuist"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestJuist" type="Label" parent="Control"]
+visible = false
+margin_left = 57.0175
+margin_top = 723.41
+margin_right = 127.018
+margin_bottom = 761.41
+custom_fonts/font = SubResource( 2 )
+text = "Juist"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -10
+
+[node name="background" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 240.925, 400.808 )
+texture = ExtResource( 4 )
+
+[node name="Title" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 233.407, 86.4172 )
+scale = Vector2( 0.229761, 0.229761 )
+texture = ExtResource( 3 )
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+margin_left = 57.0
+margin_top = 157.0
+margin_right = 416.0
+margin_bottom = 708.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AntwoordA" type="TextureButton" parent="CanvasLayer/Control"]
+margin_left = 2.96405
+margin_top = 22.0628
+margin_right = 331.964
+margin_bottom = 124.062
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A" type="Label" parent="CanvasLayer/Control/AntwoordA"]
+margin_left = 61.9057
+margin_top = 31.8903
+margin_right = 101.906
+margin_bottom = 69.8903
+custom_fonts/font = SubResource( 3 )
+text = "A: vraaghetdepolitie.nl"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AntwoordB" type="TextureButton" parent="CanvasLayer/Control"]
+margin_left = 6.50842
+margin_top = 159.502
+margin_right = 330.508
+margin_bottom = 260.502
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="Label" parent="CanvasLayer/Control/AntwoordB"]
+margin_left = 57.7746
+margin_top = 31.7086
+margin_right = 97.7746
+margin_bottom = 69.7086
+custom_fonts/font = SubResource( 3 )
+text = "B:  Sense.info"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AntwoordC" type="TextureButton" parent="CanvasLayer/Control"]
+margin_left = 6.01697
+margin_top = 290.502
+margin_right = 328.017
+margin_bottom = 390.502
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C" type="Label" parent="CanvasLayer/Control/AntwoordC"]
+margin_left = 47.9458
+margin_top = 29.9661
+margin_right = 87.9458
+margin_bottom = 67.9661
+custom_fonts/font = SubResource( 3 )
+text = "C: helpwanted.nl"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AntwoordD" type="TextureButton" parent="CanvasLayer/Control"]
+margin_left = 13.0825
+margin_top = 424.01
+margin_right = 320.082
+margin_bottom = 520.01
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="D" type="Label" parent="CanvasLayer/Control/AntwoordD"]
+margin_left = 50.9424
+margin_top = 26.9695
+margin_right = 90.9424
+margin_bottom = 64.9695
+custom_fonts/font = SubResource( 3 )
+text = "D: geen Idee"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="CanvasLayer/Control/AntwoordA" to="." method="_on_AntwoordA_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/AntwoordB" to="." method="_on_AntwoordB_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/AntwoordC" to="." method="_on_AntwoordC_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/AntwoordD" to="." method="_on_AntwoordD_pressed"]

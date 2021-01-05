@@ -1,0 +1,176 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Font/Montserrat-Medium.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Images/BackgroundGamev1.png" type="Texture" id=2]
+[ext_resource path="res://Images/Button.png" type="Texture" id=3]
+[ext_resource path="res://Images/UnfocusedButton.png" type="Texture" id=4]
+[ext_resource path="res://MainGame.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 56
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+font_data = ExtResource( 1 )
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Control2" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Vraag" type="Label" parent="Control2"]
+margin_left = 49.3678
+margin_top = 25.059
+margin_right = 446.368
+margin_bottom = 124.059
+custom_fonts/font = SubResource( 1 )
+text = "Onderwerpen"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestOnjuist" type="Label" parent="Control2"]
+visible = false
+margin_left = 284.817
+margin_top = 718.318
+margin_right = 417.817
+margin_bottom = 788.318
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "OJA"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestJuist" type="Label" parent="Control2"]
+visible = false
+margin_left = 59.1815
+margin_top = 715.636
+margin_right = 137.182
+margin_bottom = 785.636
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "JA"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI" type="CanvasLayer" parent="."]
+layer = -2
+
+[node name="Background" type="Sprite" parent="UI"]
+position = Vector2( 240.416, 401.637 )
+texture = ExtResource( 2 )
+
+[node name="Title" type="Sprite" parent="UI"]
+position = Vector2( 232.817, 59.5268 )
+scale = Vector2( 0.236031, 0.22678 )
+texture = ExtResource( 3 )
+offset = Vector2( 50.762, 35.6857 )
+
+[node name="Control" type="Control" parent="UI"]
+margin_left = 2.0
+margin_top = 500.0
+margin_right = 476.0
+margin_bottom = 749.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Antwoord A" type="TextureButton" parent="UI/Control"]
+margin_left = 45.6742
+margin_top = -340.335
+margin_right = 414.674
+margin_bottom = -210.335
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="A" type="Label" parent="UI/Control/Antwoord A"]
+margin_left = 89.082
+margin_top = 26.5087
+margin_right = 283.082
+margin_bottom = 88.5087
+custom_fonts/font = SubResource( 2 )
+text = "Sexting"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Antwoord B" type="TextureButton" parent="UI/Control"]
+margin_left = 41.7401
+margin_top = -197.587
+margin_right = 408.74
+margin_bottom = -61.5874
+texture_normal = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="B" type="Label" parent="UI/Control/Antwoord B"]
+margin_left = 64.1522
+margin_top = 30.1398
+margin_right = 329.152
+margin_bottom = 92.1398
+custom_fonts/font = SubResource( 2 )
+text = "Sextortion"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Antwoord C" type="TextureButton" parent="UI/Control"]
+margin_left = 43.1033
+margin_top = -41.5655
+margin_right = 412.103
+margin_bottom = 83.4345
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="C" type="Label" parent="UI/Control/Antwoord C"]
+margin_left = 70.6451
+margin_top = 27.2085
+margin_right = 306.645
+margin_bottom = 89.2085
+custom_fonts/font = SubResource( 2 )
+text = "Exposing"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Antwoord D" type="TextureButton" parent="UI/Control"]
+margin_left = 53.3303
+margin_top = 88.9955
+margin_right = 410.33
+margin_bottom = 212.995
+texture_normal = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="D" type="Label" parent="UI/Control/Antwoord D"]
+margin_left = 42.9677
+margin_top = 25.1724
+margin_right = 328.968
+margin_bottom = 87.1724
+custom_fonts/font = SubResource( 2 )
+text = "Direct hulp"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="UI/Control/Antwoord A" to="." method="_on_Antwoord_A_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord B" to="." method="_on_Antwoord_B_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord C" to="." method="_on_Antwoord_C_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord D" to="." method="_on_Antwoord_D_pressed"]
