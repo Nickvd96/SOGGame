@@ -101,7 +101,7 @@ margin_top = 26.5087
 margin_right = 251.128
 margin_bottom = 88.5087
 custom_fonts/font = SubResource( 2 )
-text = "A: .."
+text = "A: fout"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -123,7 +123,7 @@ margin_top = 28.458
 margin_right = 327.47
 margin_bottom = 90.458
 custom_fonts/font = SubResource( 2 )
-text = "B: .."
+text = "B: fout"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -145,7 +145,7 @@ margin_top = 27.0
 margin_right = 332.0
 margin_bottom = 96.0
 custom_fonts/font = SubResource( 2 )
-text = "C:  .."
+text = "C:  fout"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -167,11 +167,11 @@ margin_top = 25.1724
 margin_right = 328.968
 margin_bottom = 87.1724
 custom_fonts/font = SubResource( 2 )
-text = "D:  .."
+text = "D:  goed"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="UI/Control/Antwoord A" to="." method="_on_Antwoord_A_pressed"]
-[connection signal="pressed" from="UI/Control/Antwoord B" to="." method="_on_Antwoord_B_pressed"]
-[connection signal="pressed" from="UI/Control/Antwoord C" to="." method="_on_Antwoord_C_pressed"]
-[connection signal="pressed" from="UI/Control/Antwoord D" to="." method="_on_Antwoord_D_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord A" to="." method="_on_Antwoord_3CA_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord B" to="." method="_on_Antwoord_3CB_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord C" to="." method="_on_Antwoord_3CC_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord D" to="." method="_on_Antwoord_3CD_pressed"]

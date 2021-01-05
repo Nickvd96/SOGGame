@@ -2,9 +2,6 @@ extends Node2D
 
 
 
-
-
-
 func _ready():
 	#inladen van hoeveelheid juiste/onjuiste antwoorden kan worden gerbuikt voor testen 
 	#voor gerbuik zet label op visbale
@@ -97,3 +94,30 @@ func _on_Antwoord_3BD_pressed():
 	GlobalScripts.VerhaalA1 += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp3C.tscn")
+
+
+func _on_Antwoord_3CA_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2C += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://ResultaatScreen3.tscn")
+
+
+func _on_Antwoord_3CB_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2C += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://ResultaatScreen3.tscn")
+
+
+func _on_Antwoord_3CC_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2C += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://ResultaatScreen3.tscn")
+
+
+func _on_Antwoord_3CD_pressed():
+	GlobalScripts.Juist += 1
+	$Control2/TestJuist.text = str(GlobalScripts.Juist)
+	get_tree().change_scene("res://ResultaatScreen3.tscn")
