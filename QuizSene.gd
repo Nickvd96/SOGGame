@@ -42,7 +42,7 @@ func _on_Antwoord_D_pressed():
 
 func _on_Antwoord_3AA_pressed():
 	GlobalScripts.Onjuist += 1
-	GlobalScripts.VerhaalA1 += 1
+	GlobalScripts.Verhaal3A += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp3B.tscn")
 
@@ -54,14 +54,14 @@ func _on_Antwoord_3AB_pressed():
 
 func _on_Antwoord_3AC_pressed():
 	GlobalScripts.Onjuist += 1
-	GlobalScripts.VerhaalA1 += 1
+	GlobalScripts.Verhaal3A += 1
 	$Control2/TestJuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp3B.tscn")
 
 
 func _on_Antwoord_3AD_pressed():
 	GlobalScripts.Onjuist += 1
-	GlobalScripts.VerhaalA1 += 1
+	GlobalScripts.Verhaal3A += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp3C.tscn")
 
@@ -77,42 +77,42 @@ func _on_Antwoord_3BA_pressed():
 
 func _on_Antwoord_3BB_pressed():
 	GlobalScripts.Onjuist += 1
-	GlobalScripts.VerhaalA1 += 1
+	GlobalScripts.Verhaal3B += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp3C.tscn")
 
 
 func _on_Antwoord_3BC_pressed():
 	GlobalScripts.Onjuist += 1
-	GlobalScripts.VerhaalA1 += 1
+	GlobalScripts.Verhaal3B += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp3C.tscn")
 
 
 func _on_Antwoord_3BD_pressed():
 	GlobalScripts.Onjuist += 1
-	GlobalScripts.VerhaalA1 += 1
+	GlobalScripts.Verhaal3B += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp3C.tscn")
 
 
 func _on_Antwoord_3CA_pressed():
 	GlobalScripts.Onjuist += 1
-	GlobalScripts.Verhaal2C += 1
+	GlobalScripts.Verhaal3C += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://ResultaatScreen3.tscn")
 
 
 func _on_Antwoord_3CB_pressed():
 	GlobalScripts.Onjuist += 1
-	GlobalScripts.Verhaal2C += 1
+	GlobalScripts.Verhaal3C += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://ResultaatScreen3.tscn")
 
 
 func _on_Antwoord_3CC_pressed():
 	GlobalScripts.Onjuist += 1
-	GlobalScripts.Verhaal2C += 1
+	GlobalScripts.Verhaal3C += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://ResultaatScreen3.tscn")
 

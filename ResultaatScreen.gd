@@ -51,8 +51,12 @@ func _on_Terug_naar_startscherm_pressed():
 	GlobalScripts.VerhaalA1 = 0
 	GlobalScripts.VerhaalB1 = 0
 	GlobalScripts.VerhaalC1 = 0
-
-
+	GlobalScripts.Verhaal2A = 0
+	GlobalScripts.Verhaal2B = 0
+	GlobalScripts.Verhaal2C = 0
+	GlobalScripts.Verhaal3A = 0
+	GlobalScripts.Verhaal3B = 0
+	GlobalScripts.Verhaal3C = 0
 
 
 
