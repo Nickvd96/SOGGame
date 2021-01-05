@@ -41,3 +41,32 @@ func _on_Antwoord_D_pressed():
 	GlobalScripts.VerhaalA1 += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp1B.tscn")
+
+
+
+
+func _on_Antwoord_2A_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2A += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp2B.tscn")
+
+
+func _on_Antwoord_2B_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2A += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp2B.tscn")
+
+
+func _on_Antwoord_2C_pressed():
+	GlobalScripts.Juist += 1
+	$Control2/TestJuist.text = str(GlobalScripts.Juist)
+	get_tree().change_scene("res://Onderwerp2B.tscn")
+
+
+func _on_Antwoord_2D_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2A += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp2B.tscn")

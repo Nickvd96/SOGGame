@@ -7,15 +7,15 @@
 [ext_resource path="res://Images/TestPicture.jpg" type="Texture" id=5]
 [ext_resource path="res://TakingFakePicture.gd" type="Script" id=6]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 30
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 200
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=3]
 size = 30
 font_data = ExtResource( 2 )
 
@@ -61,7 +61,7 @@ margin_left = 73.0754
 margin_top = 21.4186
 margin_right = 222.075
 margin_bottom = 59.4186
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 1 )
 text = "Nu verder"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -81,7 +81,7 @@ margin_left = -734.849
 margin_top = -128.42
 margin_right = 771.151
 margin_bottom = 116.58
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Maak een Foto"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -103,7 +103,7 @@ margin_left = 85.7196
 margin_top = 26.9858
 margin_right = 245.72
 margin_bottom = 64.9858
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = "Maak Foto"
 __meta__ = {
 "_edit_use_anchors_": false
