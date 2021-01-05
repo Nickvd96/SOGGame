@@ -32,6 +32,7 @@ func _ready():
 		
 	if GlobalScripts.VerhaalC1 == 0:
 		$Controlverhaal3/verhaal3.hide()
+
 		
 func _on_verhaal1_pressed():
 	get_tree().change_scene("res://SextingVraag1Info.tscn")
@@ -51,9 +52,7 @@ func _on_Terug_naar_startscherm_pressed():
 	GlobalScripts.VerhaalA1 = 0
 	GlobalScripts.VerhaalB1 = 0
 	GlobalScripts.VerhaalC1 = 0
-	GlobalScripts.Verhaal2A = 0
-	GlobalScripts.Verhaal2B = 0
-	GlobalScripts.Verhaal2C = 0
+	
 	GlobalScripts.Verhaal3A = 0
 	GlobalScripts.Verhaal3B = 0
 	GlobalScripts.Verhaal3C = 0

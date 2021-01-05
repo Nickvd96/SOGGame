@@ -103,9 +103,9 @@ __meta__ = {
 
 [node name="verhaal1" type="TextureButton" parent="Controlverhaal1"]
 margin_left = -33.3699
-margin_top = 361.562
+margin_top = 359.975
 margin_right = 241.63
-margin_bottom = 446.562
+margin_bottom = 444.975
 texture_normal = ExtResource( 4 )
 expand = true
 __meta__ = {
