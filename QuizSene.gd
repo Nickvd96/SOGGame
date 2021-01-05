@@ -44,16 +44,56 @@ func _on_Antwoord_D_pressed():
 
 
 func _on_Antwoord_3AA_pressed():
-	pass # Replace with function body.
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.VerhaalA1 += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp3B.tscn")
 
-
+#het juiste antwoord
 func _on_Antwoord_3AB_pressed():
-	pass # Replace with function body.
-
+	GlobalScripts.Juist += 1	
+	$Control2/TestOnjuist.text = str(GlobalScripts.Juist)
+	get_tree().change_scene("res://Onderwerp3B.tscn")
 
 func _on_Antwoord_3AC_pressed():
-	pass # Replace with function body.
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.VerhaalA1 += 1
+	$Control2/TestJuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp3B.tscn")
 
 
 func _on_Antwoord_3AD_pressed():
-	pass # Replace with function body.
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.VerhaalA1 += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp3C.tscn")
+
+
+
+#######################################################################
+#het juiste antwoord
+func _on_Antwoord_3BA_pressed():
+	GlobalScripts.Juist += 1	
+	$Control2/TestOnjuist.text = str(GlobalScripts.Juist)
+	get_tree().change_scene("res://Onderwerp3C.tscn")
+
+
+func _on_Antwoord_3BB_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.VerhaalA1 += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp3C.tscn")
+
+
+func _on_Antwoord_3BC_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.VerhaalA1 += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp3C.tscn")
+
+
+func _on_Antwoord_3BD_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.VerhaalA1 += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp3C.tscn")
