@@ -29,9 +29,7 @@ margin_top = 25.0
 margin_right = 430.0
 margin_bottom = 124.0
 custom_fonts/font = SubResource( 1 )
-text = "Iemand dreigt je foto rond te
-sturen naar al je klasgenoten. Wat
-is het beste om te doen?"
+text = "Vraag 3"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -176,7 +174,7 @@ verwijderen"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="UI/Control/Antwoord 2A" to="." method="_on_Antwoord_2BA_pressed"]
-[connection signal="pressed" from="UI/Control/Antwoord 2B" to="." method="_on_Antwoord_2BB_pressed"]
-[connection signal="pressed" from="UI/Control/Antwoord 2C" to="." method="_on_Antwoord_2BC_pressed"]
-[connection signal="pressed" from="UI/Control/Antwoord 2D" to="." method="_on_Antwoord_2BD_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord 2A" to="." method="_on_Antwoord_2A_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord 2B" to="." method="_on_Antwoord_2B_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord 2C" to="." method="_on_Antwoord_2C_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord 2D" to="." method="_on_Antwoord_2D_pressed"]

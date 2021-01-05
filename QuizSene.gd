@@ -70,3 +70,30 @@ func _on_Antwoord_2D_pressed():
 	GlobalScripts.Verhaal2A += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp2B.tscn")
+
+
+func _on_Antwoord_2BA_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2B += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp2C.tscn")
+
+
+func _on_Antwoord_2BB_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2B += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp2C.tscn")
+
+
+func _on_Antwoord_2BC_pressed():
+	GlobalScripts.Juist += 1
+	$Control2/TestJuist.text = str(GlobalScripts.Juist)
+	get_tree().change_scene("res://Onderwerp2C.tscn")
+
+
+func _on_Antwoord_2BD_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2B += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://Onderwerp2C.tscn")
