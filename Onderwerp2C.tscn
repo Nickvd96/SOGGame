@@ -174,7 +174,7 @@ verwijderen"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-[connection signal="pressed" from="UI/Control/Antwoord 2A" to="." method="_on_Antwoord_2A_pressed"]
-[connection signal="pressed" from="UI/Control/Antwoord 2B" to="." method="_on_Antwoord_2B_pressed"]
-[connection signal="pressed" from="UI/Control/Antwoord 2C" to="." method="_on_Antwoord_2C_pressed"]
-[connection signal="pressed" from="UI/Control/Antwoord 2D" to="." method="_on_Antwoord_2D_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord 2A" to="." method="_on_Antwoord_2CA_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord 2B" to="." method="_on_Antwoord_2CB_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord 2C" to="." method="_on_Antwoord_2CC_pressed"]
+[connection signal="pressed" from="UI/Control/Antwoord 2D" to="." method="_on_Antwoord_2CD_pressed"]

@@ -97,3 +97,24 @@ func _on_Antwoord_2BD_pressed():
 	GlobalScripts.Verhaal2B += 1
 	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
 	get_tree().change_scene("res://Onderwerp2C.tscn")
+
+
+func _on_Antwoord_2CA_pressed():
+	GlobalScripts.Juist += 1
+	$Control2/TestJuist.text = str(GlobalScripts.Juist)
+	get_tree().change_scene("res://ResultaatScreen2.tscn")
+
+
+func _on_Antwoord_2CB_pressed():
+	GlobalScripts.Onjuist += 1
+	GlobalScripts.Verhaal2C += 1
+	$Control2/TestOnjuist.text = str(GlobalScripts.Onjuist)
+	get_tree().change_scene("res://ResultaatScreen2.tscn")
+
+
+func _on_Antwoord_2CC_pressed():
+	pass # Replace with function body.
+
+
+func _on_Antwoord_2CD_pressed():
+	pass # Replace with function body.
