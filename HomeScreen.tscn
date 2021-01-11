@@ -19,9 +19,9 @@ position = Vector2( 240.722, 399.553 )
 texture = ExtResource( 3 )
 
 [node name="PlayQuiz" type="TextureButton" parent="UI"]
-margin_left = 66.6559
+margin_left = 65.2416
 margin_top = 593.787
-margin_right = 416.656
+margin_right = 415.242
 margin_bottom = 702.787
 texture_normal = ExtResource( 4 )
 expand = true
@@ -35,6 +35,7 @@ margin_left = 66.2802
 margin_top = 4.42554
 margin_right = 283.28
 margin_bottom = 103.426
+rect_rotation = -0.312212
 custom_fonts/font = SubResource( 1 )
 text = "PLAY"
 __meta__ = {
