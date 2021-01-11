@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="SOGTheQuiz"
-run/main_scene="res://HomeScreen.tscn"
+run/main_scene="res://home_newOntwerp.tscn"
 config/icon="res://icon.png"
 
 [autoload]
