@@ -9,5 +9,5 @@ func _ready():
 
 
 
-func _on_gaVerderButton2_pressed():
+func _on_verderInfo_pressed():
 	get_tree().change_scene("res://info_newOntwerp.tscn")
