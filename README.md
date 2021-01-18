@@ -34,3 +34,20 @@ Zoals hierboven al vernoemd, voel je compleet vrij om toevoegingen/aanpassingen 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Iteraties
+### Eerste versie
+
+![Home screen 1](https://i.imgur.com/CcssTEs.png)
+![Take pic 1.1](https://i.imgur.com/XUH6X1b.png)
+![Take pic 1.2](https://i.imgur.com/vmqckWF.png)
+![Onderwerpen 1](https://i.imgur.com/1JWXREb.png)
+![Vragen 1](https://i.imgur.com/oUZdS5v.png)
+![Resultaat 1](https://i.imgur.com/l4uZrTZ.png)
+
+### Huidige (laatste) versie
+
+![Home screen 2](https://i.imgur.com/reefsrI.png)
+![Welkom 2](https://i.imgur.com/soNGoLd.png)
+![Take pic 2.1](https://i.imgur.com/ZrmnLTm.png)
+![Onderwerpen 2](https://i.imgur.com/r0qNzGI.png)
