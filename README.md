@@ -1,4 +1,5 @@
 # SOGGame
+De naam SOGGame werd gebruikt als template naam omdat we nog geen naam verzonnen hadden.
 Project over online sexueel geweld, dit project is gemaakt voor Jacqueline Pijcke om leerlingen van 12 tot en met 17 jaar te waarschuwen over online sexueel geweld.
 
 ## Installatie
@@ -6,24 +7,40 @@ Project over online sexueel geweld, dit project is gemaakt voor Jacqueline Pijck
 De app is gemaakt in [godotengine](https://godotengine.org/) versie 3.2.3 de standaard versie. Als je de repo cloned kun je in godot het project importen en vanuit daar werken.
 
 ## Support
-Voor de beste antwoorden kun je terecht op de [Q&A](https://godotengine.org/qa) pagina van godotengine zelf. Hier zijn al veel vragen gesteld en kun je zelf ook meerdere vragen stellen. Omdat het nog een vrij nieuwe nieuwe app is kan het even duren voordat je antwoord krijgt.
+Als je vragen hebt over coderen binnen godotengine kun je terecht op de [Q&A](https://godotengine.org/qa) pagina van godotengine zelf. Hier zijn al veel vragen gesteld en kun je zelf ook meerdere vragen stellen. Omdat het nog een vrij nieuwe nieuwe app is kan het even duren voordat je antwoord krijgt.
+
+### Intro
+Om een basis kennis te krijgen van godotengine raden wij [deze](https://www.youtube.com/watch?v=QftpPI5iYrY) tutorial aan.
+
+### Exporten naar android
+Als je de applicatie wilt exporteren dan kun je dat makkelijk doen door [deze](https://www.youtube.com/watch?v=QPI8JsKF2j4) tutorial te volgen.
 
 ## Contributie
 Voel je welkom om het project uit te breiden. Het project was een open project voor Jacqueline Pijcke en ze wil dat er in de toekomst nog verder aan gewerkt wordt. 
 
 Test je toevoegingen van te voren alsjeblieft goed.
 
+### Wat er nog gemaakt moet worden
+
+In de app moeten nog de volgende aspecten gerealiseerd worden:
+* Verhalen
+  * Schrijven en spreken
+  * Toevoegen aan het project
+  * Functionaliteit van de audio player buttons
+* Camera
+  * In de StrafFoto branch staan al wel een paar pogingen maar nog geen succesvolle
+
 ## Auteurs en erkenning
-### Nick & Robin,
+### Nickvd1996 & robijntje(kriativelabs),
 De godotengine guru's. In het begin van het project. Ze hebben onderandere de eerste versie van de app gemaakt, Het gedeelte van de score bijhouden en andere mensen geholpen waar nodig.
 
-### Rick
+### RickvWijk1
 Rick heeft veel gewerkt aan het nieuwe design en die schermen in de app verwerkt.
 
-### Demi
+### demidekeijzer
 De branch ExposingONderwerp is gemaakt door Demi en die is samengevoegd met het nieuwe ontwerp van Rick
 
-### Stef
+### 74089
 Gewerkt aan de camera feature die niet afgekomen is omdat die later ook niet gebruikt ging worden. Ook had Stef het alert systeem gemaakt.
 
 ## Project status
@@ -35,19 +52,14 @@ Zoals hierboven al vernoemd, voel je compleet vrij om toevoegingen/aanpassingen 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## Iteraties
-### Eerste versie
+## Huidige versie van de app
 
-![Home screen 1](https://i.imgur.com/CcssTEs.png)
-![Take pic 1.1](https://i.imgur.com/XUH6X1b.png)
-![Take pic 1.2](https://i.imgur.com/vmqckWF.png)
-![Onderwerpen 1](https://i.imgur.com/1JWXREb.png)
-![Vragen 1](https://i.imgur.com/oUZdS5v.png)
-![Resultaat 1](https://i.imgur.com/l4uZrTZ.png)
-
-### Huidige (laatste) versie
+Op de huidige versie van de app is de stijl, gemaakt door RickvWijk1, toegepast.
 
 ![Home screen 2](https://i.imgur.com/reefsrI.png)
 ![Welkom 2](https://i.imgur.com/soNGoLd.png)
+
+Het Take a pic gedeelte doet momenteel nog niks dit zou nog toegevoegd mogen worden. De stories gaan al wel naar de desbetreffende onderwerpen maar de audio fragmenten zijn nog niet gemaakt en zitten er dus ook nog niet in.
+
 ![Take pic 2.1](https://i.imgur.com/ZrmnLTm.png)
 ![Onderwerpen 2](https://i.imgur.com/r0qNzGI.png)
