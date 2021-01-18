@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Images/exposing_vraag1.png" type="Texture" id=1]
 [ext_resource path="res://Font/Helvetica 400.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Images/Button_NewDesign.png" type="Texture" id=3]
+[ext_resource path="res://exposingVraag1_newOntwerp.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -17,6 +18,7 @@ size = 25
 font_data = ExtResource( 2 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
 
 [node name="UI" type="CanvasLayer" parent="."]
 
@@ -87,3 +89,14 @@ margin_right = 98.368
 margin_bottom = 47.3268
 custom_fonts/font = SubResource( 3 )
 text = "C:"
+
+[node name="TextureButton" type="TextureButton" parent="UI"]
+margin_left = 37.0
+margin_top = 506.0
+margin_right = 346.0
+margin_bottom = 788.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="UI/Antwoord1" to="." method="_on_Antwoord1_pressed"]
+[connection signal="pressed" from="UI/TextureButton" to="." method="_on_TextureButton_pressed"]

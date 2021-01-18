@@ -7,5 +7,7 @@ func _ready():
 
 
 
+
+
 func _on_TextureButton_pressed():
-	get_tree().change_scene("res://exposingVraag1_newOntwerp.tscn")
+	get_tree().change_scene("res://exposingVraag2_newOntwerp.tscn")
