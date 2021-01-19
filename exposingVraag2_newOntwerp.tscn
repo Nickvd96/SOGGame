@@ -1,95 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Font/Helvetica 400.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Images/Button_NewDesign.png" type="Texture" id=2]
 [ext_resource path="res://Images/Exposing_vraag2.png" type="Texture" id=3]
-[ext_resource path="res://exposingVraag2_newOntwerp.gd" type="Script" id=4]
-
-[sub_resource type="DynamicFont" id=1]
-size = 25
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 25
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 25
-font_data = ExtResource( 1 )
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 4 )
 
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Background" type="Sprite" parent="UI"]
 position = Vector2( 190.662, 409.641 )
 texture = ExtResource( 3 )
-
-[node name="Antwoord1" type="TextureButton" parent="UI"]
-visible = false
-margin_left = 50.9691
-margin_top = 512.524
-margin_right = 328.969
-margin_bottom = 578.524
-texture_normal = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Antwoord1" type="Label" parent="UI/Antwoord1"]
-margin_left = 60.3848
-margin_top = 19.1719
-margin_right = 100.385
-margin_bottom = 45.1719
-custom_fonts/font = SubResource( 1 )
-text = "A:"
-
-[node name="Antwoord2" type="TextureButton" parent="UI"]
-visible = false
-margin_left = 52.857
-margin_top = 609.743
-margin_right = 330.857
-margin_bottom = 675.743
-texture_normal = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Antwoord2" type="Label" parent="UI/Antwoord2"]
-margin_left = 58.368
-margin_top = 22.4493
-margin_right = 98.368
-margin_bottom = 77.4493
-custom_fonts/font = SubResource( 2 )
-text = "B:
-"
-
-[node name="Antwoord3" type="TextureButton" parent="UI"]
-visible = false
-margin_left = 50.9692
-margin_top = 704.13
-margin_right = 328.969
-margin_bottom = 770.13
-texture_normal = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Antwoord3" type="Label" parent="UI/Antwoord3"]
-margin_left = 58.368
-margin_top = 21.3268
-margin_right = 98.368
-margin_bottom = 47.3268
-custom_fonts/font = SubResource( 3 )
-text = "C:"
-
-[node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 31.0
-margin_top = 506.0
-margin_right = 342.0
-margin_bottom = 785.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
