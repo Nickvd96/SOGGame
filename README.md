@@ -6,6 +6,12 @@ Project over online sexueel geweld, dit project is gemaakt voor Jacqueline Pijck
 
 De app is gemaakt in [godotengine](https://godotengine.org/) versie 3.2.3 de standaard versie. Als je de repo cloned kun je in godot het project importen en vanuit daar werken.
 
+### Android
+Als de app is geexporteerd naar Android dan kan de APK worden geïnstalleerd door de applicatie te side loaden. Dit leg ik hieronder verder uit.
+Om de app te side loaden download je de APK naar je Android telefoon. Selecteer de gedownloadde APK, en klik op 'Installeren'. Krijg je een beveiligingsmelding? De melding zal je doorlijden naar een instellingen scherm. Zet hier 'Toestaan van deze bron' op aan.
+![Toestaan screenshot](http://robinshost.nl/img/toestaanuitdezebron.png)
+Na het installeren kun je op 'Openen' tikken, of de app opnenen via de Android launcher.
+
 ## Support
 Als je vragen hebt over coderen binnen godotengine kun je terecht op de [Q&A](https://godotengine.org/qa) pagina van godotengine zelf. Hier zijn al veel vragen gesteld en kun je zelf ook meerdere vragen stellen. Omdat het nog een vrij nieuwe nieuwe app is kan het even duren voordat je antwoord krijgt.
 
